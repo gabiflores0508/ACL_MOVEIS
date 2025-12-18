@@ -6,7 +6,7 @@ import {
   ChevronRight, CheckCircle2, Award, Clock, Ruler, Info, MessageCircle
 } from 'lucide-react';
 import { AMBIENTES } from './constants.tsx';
-import { ChatContent, getDesignAdvice } from './geminiService';
+import { ChatContent, getDesignAdvice } from './geminiService.ts';
 
 // Reusable component for fade-in animations on scroll
 const FadeInSection: React.FC<{ children: React.ReactNode, delay?: number }> = ({ children, delay = 0 }) => {

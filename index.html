@@ -7,6 +7,10 @@
     <title>ACL Móveis | Design de Interiores de Alto Padrão</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+      // Garante que o SDK do Gemini não quebre se o process.env não estiver definido globalmente
+      window.process = window.process || { env: {} };
+    </script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -30,5 +34,7 @@
 </head>
 <body class="bg-black text-white selection:bg-red-900 selection:text-white">
     <div id="root"></div>
+    <!-- Ponto de entrada crucial para o React rodar -->
+    <script type="module" src="./index.tsx"></script>
 </body>
 </html>
