@@ -1,0 +1,7 @@
+{
+  "name": "ACL Móveis - Elegância e Modernidade",
+  "description": "Um site premium para loja de móveis de alto padrão, combinando design sofisticado com consultoria de decoração impulsionada por IA.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
