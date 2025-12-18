@@ -5,10 +5,9 @@ import {
   Sparkles, Send, ArrowRight, Camera, Image as ImageIcon, ExternalLink,
   ChevronRight, CheckCircle2, Award, Clock, Ruler, Info, MessageCircle
 } from 'lucide-react';
-import { AMBIENTES } from './constants.tsx';
-import { ChatContent, getDesignAdvice } from './geminiService.ts';
+import { AMBIENTES } from './constants';
+import { ChatContent, getDesignAdvice } from './geminiService';
 
-// Reusable component for fade-in animations on scroll
 const FadeInSection: React.FC<{ children: React.ReactNode, delay?: number }> = ({ children, delay = 0 }) => {
   const [isVisible, setVisible] = useState(false);
   const domRef = useRef<HTMLDivElement>(null);
@@ -362,6 +361,7 @@ const AIConsultant = () => {
                 <div className="w-2 h-2 rounded-full bg-[#8B444E] animate-pulse"></div>
                 <p className="text-white font-bold text-[9px] uppercase tracking-[0.3em]">ACL Concept AI</p>
               </div>
+              {/* Fixed: Use capitalized Sparkles component from lucide-react */}
               <Sparkles className="text-white/30" size={16} />
             </div>
 
